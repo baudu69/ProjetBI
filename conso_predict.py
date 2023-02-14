@@ -44,7 +44,7 @@ if __name__ == '__main__':
     temperature = args.temperature
     date = args.date
     date_time = datetime.strptime(date, '%d/%m/%y')
-    jour_semaine = date_time.weekday()
+    jour_semaine = date_time
     jour_mois = date_time.day
     mois = date_time.month
     print(predict(model, heure, temperature, jour_semaine, jour_mois, mois))
